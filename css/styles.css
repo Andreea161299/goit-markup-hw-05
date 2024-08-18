@@ -70,8 +70,9 @@ img {
 .container {
   margin: 0 auto;
   max-width: 1158px;
-  padding: 0 15px;
+  padding: 0 16px;
 }
+
 
 .section {
   padding: 120px 0;
@@ -155,9 +156,27 @@ img {
   justify-content: space-between;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
+.desktop-nav {
+  display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+@media (min-width: 768px)  {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+  
 }
 
 .main-nav .logo {
@@ -238,7 +257,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/FirstSectionBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -300,6 +319,8 @@ img {
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
 }
+
+
 
 /* .features-icon {
   padding: 24px 100px;
@@ -739,3 +760,4 @@ img {
   line-height: 1.5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+

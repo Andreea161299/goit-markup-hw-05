@@ -23,30 +23,42 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-nav">
+        <div class="mobile-nav">
           <a href="./index.html" class="logo link"
-            >Web<span class="accent">Studio</span></a
-          >
-          <ul class="nav-list">
-            <li class="item">
-              <a href="./index.html" class="link current">Studio</a>
-            </li>
-            <li class="item"><a href="" class="link">Portfolio</a></li>
-            <li class="item"><a href="" class="link">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="contact-list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+          >Web<span class="accent">Studio</span></a
+        >
+          <div class="hamburger-menu">
+          <svg width="16.8" height="14.4">
+            <use href="./images/icons.svg#icon-hamburger-menu" />
+          </svg>
+        </div>
+        </div>
+        <div class="desktop-nav">
+          <nav class="main-nav">
+            <a href="./index.html" class="logo link"
+              >Web<span class="accent">Studio</span></a
+            >
+            <ul class="nav-list">
+              <li class="item">
+                <a href="./index.html" class="link current">Studio</a>
+              </li>
+              <li class="item"><a href="" class="link">Portfolio</a></li>
+              <li class="item"><a href="" class="link">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="address">
+            <ul class="contact-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main class="main-content">
@@ -467,7 +479,7 @@
       <div class="modal">
         <button type="button" class="btn btn-close">
           <svg class="icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#btn-close" />
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
